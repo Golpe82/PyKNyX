@@ -202,5 +202,9 @@ class AdminUtility(object):
 
         # Parse args
         args = mainParser.parse_args()
-        args.func(args)
+        try:
+            args.func(args)
+        except AttributeError:
+            mainParser.print_help()
+            mainParser.exit()
 
