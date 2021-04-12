@@ -395,8 +395,8 @@ def main():
     # If XML map file name is given, try to load it
     if args.xmlMapFile:
         mapper.loadXML(args.xmlMapFile)
-        for gad,tab in mapper.table.items():
-            print gad,tab
+        for gad, tab in mapper.table.items():
+            print(gad, tab)
     else:
         mapper.loadFrom(args.gadMapPath)
 
