@@ -36,7 +36,7 @@ Using more than one device
 
 Running an entirely separate KNX protocol stack per device does not scale.
 
-Aassume that you want to monitor a building with 1000 devices. That will
+Assume that you want to monitor a building with 1000 devices. That will
 open 2000 sockets and create 5000 OS-level threads, half of which will wake
 up for each packet, only to decide that it's not for them.
 
